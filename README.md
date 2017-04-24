@@ -15,6 +15,3 @@ Includes AoT
 npm run build:prod
 npm run server
 ```
-
-Based on https://github.com/robwormald/ng-universal-demo
-
