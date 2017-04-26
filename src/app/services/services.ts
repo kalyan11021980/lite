@@ -19,4 +19,11 @@ export class ModelService {
         })
   }
 
+  postDummyData(){
+        return this._http.get('http://localhost:8000/postapi').map(res => {
+          // console.log(res);
+            return res;
+        })
+  }
+
 }

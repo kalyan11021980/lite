@@ -26,9 +26,10 @@ app.use('/', express.static('dist', {index: false}));
 
 // Started a separate thread
 
-import {getApi } from './api/api';
+import {getApi, postApi } from './api/api';
 
 app.get('/api', getApi);
+app.get('/postapi', postApi);
 
 ROUTES.forEach(route => {
   app.get(route, (req, res) => {
